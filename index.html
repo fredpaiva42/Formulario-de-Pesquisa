@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário de Pesquisa</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <h1 id="title">Formulário de Pesquisa</h1>
+
+        <p id="description">Prevenção de retinopatia diabética em pacientes do Centro de Hemodiálise</p>
+
+        <form id="survey-form">
+
+          <fieldset>
+            <label id="name-label">Nome <input id="name" type="text" required placeholder="Enter your name" class="form-control"></label>
+            <label id="email-label">Email <input id="email" type="email" required placeholder="Enter your email" class="form-control"></label>
+            <label id="number-label">Idade <input id="number" type="number" min="13" max="120" placeholder="Age" class="form-control"></label>
+          </fieldset>
+
+          <fieldset>
+            <label>Qual tipo de de Diabetes você possui?
+                <select name="" id="dropdown" class="form-select">
+                    <option value="">Selecione uma opção</option>
+                    <option value="1">Diabetes tipo I</option>
+                    <option value="2">Diabetes tipo II</option>
+                    <option value="3">Não tenho diabetes</option>
+                </select>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <p class="interior">Faz acompanhamento com oftamologista?</p>
+            <label><input name="acompanhamento" value="sim" type="radio" class="inline">Sim</label>
+            <label><input name="acompanhamento" value="não" type="radio" class="inline">Não</label>
+            <label><input name="acompanhamento" value="talvez" type="radio" class="inline">Não me lembro</label>
+          </fieldset>
+
+          <fieldset>
+            <p class="interior">Marque as opções que você deseja:</p>
+            <label><input type="checkbox" value="0" class="input-checkbox">Conheço sobre a retinopatia diabética</label>
+            <label><input type="checkbox" value="1" class="input-checkbox">Tenho alterações na retina</label>
+            <label><input type="checkbox" value="2" class="input-checkbox">Já realizei exame de fundo de olho</label>
+            <label><input type="checkbox" value="3" class="input-checkbox">Quero indicação para acompanhamento</label>
+            <label><input type="checkbox" value="4" class="input-checkbox">Tenho interesse em realizar o exame</label>
+          </fieldset>
+
+          <fieldset>
+            <label>Conte sobre sua experiência com a diabetes: <textarea rows="3" cols="30" name="bio"></textarea></label>
+          </fieldset>
+
+          <input id="submit" type="submit" value="Submit">
+    </body>
+</html>
